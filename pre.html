@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+      body {
+            background-image: url('https://pic.vjshi.com/2018-07-26/51206e985cdd867cd5f606c9624c3e38/00003.jpg?x-oss-process=style/watermark');
+            background-size:cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"], input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            background-color: #e0e0e0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" />
+  <input type="submit" value="上传" />
+</form>
+
+</body>
+</html>
